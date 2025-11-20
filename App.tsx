@@ -126,7 +126,7 @@ function App() {
                                 type="text"
                                 value={initialValue}
                                 onChange={handleCurrencyChange(setInitialValue)}
-                                className="w-full pl-12 pr-4 py-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-xl text-xl font-bold text-slate-800 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                className="w-full pl-12 pr-4 py-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-xl text-xl font-bold text-slate-800 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all focus:scale-[1.015] focus:shadow-lg origin-center"
                                 placeholder="0,00"
                             />
                         </div>
@@ -143,7 +143,7 @@ function App() {
                                 type="text"
                                 value={monthlyValue}
                                 onChange={handleCurrencyChange(setMonthlyValue)}
-                                className="w-full pl-12 pr-4 py-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-xl text-xl font-bold text-slate-800 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                                className="w-full pl-12 pr-4 py-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-xl text-xl font-bold text-slate-800 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all focus:scale-[1.015] focus:shadow-lg origin-center"
                                 placeholder="0,00"
                             />
                         </div>
@@ -163,13 +163,13 @@ function App() {
                             type="text"
                             value={rate}
                             onChange={handleNumberInput(setRate)}
-                            className="w-full pl-4 pr-4 py-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-l-xl text-xl font-bold text-slate-800 dark:text-white focus:ring-2 focus:ring-slate-400 focus:border-slate-400 outline-none z-10 transition-all"
+                            className="w-full pl-4 pr-4 py-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-l-xl text-xl font-bold text-slate-800 dark:text-white focus:ring-2 focus:ring-slate-400 focus:border-slate-400 outline-none z-10 transition-all focus:scale-[1.015] focus:shadow-lg focus:z-20"
                             placeholder="10"
                         />
                         <select 
                             value={rateType}
                             onChange={(e) => setRateType(e.target.value as RateType)}
-                            className="bg-slate-100 dark:bg-slate-700 border-y border-r border-slate-200 dark:border-slate-600 rounded-r-xl px-4 py-4 text-slate-600 dark:text-slate-200 font-bold hover:bg-slate-200 dark:hover:bg-slate-600 cursor-pointer outline-none focus:ring-2 focus:ring-slate-400 transition-colors"
+                            className="bg-slate-100 dark:bg-slate-700 border-y border-r border-slate-200 dark:border-slate-600 rounded-r-xl px-4 py-4 text-slate-600 dark:text-slate-200 font-bold hover:bg-slate-200 dark:hover:bg-slate-600 cursor-pointer outline-none focus:ring-2 focus:ring-slate-400 transition-all focus:scale-[1.015] focus:shadow-lg focus:z-20"
                         >
                             <option value={RateType.YEARLY}>Anual</option>
                             <option value={RateType.MONTHLY}>Mensal</option>
@@ -187,13 +187,13 @@ function App() {
                             type="text"
                             value={period}
                             onChange={handleNumberInput(setPeriod)}
-                            className="w-full pl-4 pr-4 py-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-l-xl text-xl font-bold text-slate-800 dark:text-white focus:ring-2 focus:ring-slate-400 focus:border-slate-400 outline-none z-10 transition-all"
+                            className="w-full pl-4 pr-4 py-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-l-xl text-xl font-bold text-slate-800 dark:text-white focus:ring-2 focus:ring-slate-400 focus:border-slate-400 outline-none z-10 transition-all focus:scale-[1.015] focus:shadow-lg focus:z-20"
                             placeholder="30"
                         />
                          <select 
                             value={periodType}
                             onChange={(e) => setPeriodType(e.target.value as PeriodType)}
-                            className="bg-slate-100 dark:bg-slate-700 border-y border-r border-slate-200 dark:border-slate-600 rounded-r-xl px-4 py-4 text-slate-600 dark:text-slate-200 font-bold hover:bg-slate-200 dark:hover:bg-slate-600 cursor-pointer outline-none focus:ring-2 focus:ring-slate-400 transition-colors"
+                            className="bg-slate-100 dark:bg-slate-700 border-y border-r border-slate-200 dark:border-slate-600 rounded-r-xl px-4 py-4 text-slate-600 dark:text-slate-200 font-bold hover:bg-slate-200 dark:hover:bg-slate-600 cursor-pointer outline-none focus:ring-2 focus:ring-slate-400 transition-all focus:scale-[1.015] focus:shadow-lg focus:z-20"
                         >
                             <option value={PeriodType.YEARS}>Anos</option>
                             <option value={PeriodType.MONTHS}>Meses</option>
