@@ -32,10 +32,10 @@ export const Visualizations: React.FC<VisualizationsProps> = ({ data, stats, isD
   });
   
   // Colors based on dark mode
-  // Light mode: Slate-600 (#52525b), Red-800 (#991b1b)
-  // Dark mode: Slate-400 (#94a3b8), Red-400 (#f87171)
-  const COLORS = isDarkMode ? ['#94a3b8', '#f87171'] : ['#52525b', '#991b1b'];
-  const areaColors = isDarkMode ? { total: '#f87171', invested: '#94a3b8' } : { total: '#991b1b', invested: '#52525b' };
+  // Light mode: Slate-600 (#52525b), Blue-600 (#2563eb)
+  // Dark mode: Slate-400 (#94a3b8), Blue-400 (#60a5fa)
+  const COLORS = isDarkMode ? ['#94a3b8', '#60a5fa'] : ['#52525b', '#2563eb'];
+  const areaColors = isDarkMode ? { total: '#60a5fa', invested: '#94a3b8' } : { total: '#2563eb', invested: '#52525b' };
 
   const pieData = [
     { name: 'Valor Investido', value: stats.totalInvested },
@@ -96,12 +96,12 @@ export const Visualizations: React.FC<VisualizationsProps> = ({ data, stats, isD
                     </div>
                     <span className="font-bold text-slate-700 dark:text-slate-200 transition-colors">{formatCurrency(stats.totalInvested)}</span>
                 </div>
-                <div className="flex justify-between items-center p-3 bg-red-50 dark:bg-red-900/20 rounded-lg transition-colors">
+                <div className="flex justify-between items-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg transition-colors">
                     <div className="flex items-center gap-2">
                         <div className="w-3 h-3 rounded-full" style={{ backgroundColor: COLORS[1] }}></div>
-                        <span className="text-sm font-medium text-red-800 dark:text-red-300 transition-colors">Juros</span>
+                        <span className="text-sm font-medium text-blue-800 dark:text-blue-300 transition-colors">Juros</span>
                     </div>
-                    <span className="font-bold text-red-800 dark:text-red-300 transition-colors">{formatCurrency(stats.totalInterest)}</span>
+                    <span className="font-bold text-blue-800 dark:text-blue-300 transition-colors">{formatCurrency(stats.totalInterest)}</span>
                 </div>
             </div>
         </div>

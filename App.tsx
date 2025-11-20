@@ -100,7 +100,7 @@ function App() {
                 {isDarkMode ? '☀️' : '🌙'}
             </button>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-red-900 dark:text-red-400 mb-4 tracking-tight transition-colors">
+          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 dark:text-blue-400 mb-4 tracking-tight transition-colors">
             Calculadora do Primeiro Milhão 💰
           </h1>
           <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto transition-colors">
@@ -110,7 +110,7 @@ function App() {
 
         {/* Main Input Section */}
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 p-6 md:p-10 mb-12 relative overflow-hidden transition-colors duration-300">
-            <h2 className="text-2xl font-bold text-red-900 dark:text-red-400 mb-8 relative z-10 transition-colors">Parâmetros do Investimento</h2>
+            <h2 className="text-2xl font-bold text-blue-900 dark:text-blue-400 mb-8 relative z-10 transition-colors">Parâmetros do Investimento</h2>
             
             {/* Currency Inputs Group */}
             <div className="border-2 border-blue-300 dark:border-blue-700 rounded-xl p-6 mb-8 bg-blue-50/30 dark:bg-blue-900/20 relative transition-colors duration-300">

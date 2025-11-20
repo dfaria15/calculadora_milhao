@@ -35,8 +35,8 @@ export const ResultCards: React.FC<ResultCardsProps> = ({ stats }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Final Total */}
-        <div className="bg-red-900 dark:bg-red-950 text-white rounded-xl p-8 shadow-lg transform hover:-translate-y-1 transition-all duration-300">
-          <p className="text-red-200 font-medium text-lg mb-1">Valor Total Final</p>
+        <div className="bg-blue-600 dark:bg-blue-800 text-white rounded-xl p-8 shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+          <p className="text-blue-100 font-medium text-lg mb-1">Valor Total Final</p>
           <p className="text-3xl font-bold tracking-tight">
             {formatCurrency(stats.totalAmount)}
           </p>
